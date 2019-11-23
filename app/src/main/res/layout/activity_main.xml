@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/graident"
+    android:paddingTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code Scanner"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"/>
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layoutfailer"
+    android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are not in the location"
+        android:textColor="#cccccc"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/not_found_img"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:id="@+id/img_reload"/>
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="try agian"
+    android:textStyle="bold"
+    android:fontFamily="monospace"
+    android:layout_gravity="center"/>
+</LinearLayout>
+    <SurfaceView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/camerapreivew"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration :"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:id="@+id/duration"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text="h"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:id="@+id/findLocation"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutTimer"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are already start today timer"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:fontFamily="monospace"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/timer_ic_main"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/result"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/new_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:text="new Offer"
+        android:layout_gravity="center"
+        />
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Other components and views -->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        app:fabAttached="true"
+       app:fabCradleRoundedCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:navigationIcon="@drawable/sreport"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        app:backgroundTint="#fff"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/scanner_mdpi"
+        android:scaleType="center"
+        app:layout_anchor="@id/bar"
+        app:fabSize="normal"
+        android:background="#fff"
+        android:backgroundTint="#fff"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.WinnerWeek">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/winner" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="win a week title"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:fontFamily="monospace"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="GO Home"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "38935603017",
+    "firebase_url": "https://muzzafapp.firebaseio.com",
+    "project_id": "muzzafapp",
+    "storage_bucket": "muzzafapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38935603017:android:1ec22654c0d1b697",
+        "android_client_info": {
+          "package_name": "codingwithmitch.com.googlemapsgoogleplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38935603017-2l208mels65403tv486be2q36i5ihon3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "codingwithmitch.com.googlemapsgoogleplaces",
+            "certificate_hash": "eedb6107aa1f3b5a8b4a69b93173d2d2ba9347b3"
+          }
+        },
+        {
+          "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAelwYZ9Q0F5CaZUZXKNgPPCR1Cekizfls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38935603017:android:fa23e2b7fcf3455c",
+        "android_client_info": {
+          "package_name": "com.example.karim.companydashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38935603017-jj4en80i3416llout67rmvul708pmc4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karim.companydashboard",
+            "certificate_hash": "eedb6107aa1f3b5a8b4a69b93173d2d2ba9347b3"
+          }
+        },
+        {
+          "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAelwYZ9Q0F5CaZUZXKNgPPCR1Cekizfls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38935603017:android:6bf5dcfd66ca453c0e1c98",
+        "android_client_info": {
+          "package_name": "com.example.karim.io.muzzafapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38935603017-e32vnln59p303mhsfjbm4vipmssdtps4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karim.io.muzzafapp",
+            "certificate_hash": "eedb6107aa1f3b5a8b4a69b93173d2d2ba9347b3"
+          }
+        },
+        {
+          "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAelwYZ9Q0F5CaZUZXKNgPPCR1Cekizfls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38935603017:android:40fb8789cbe6a994",
+        "android_client_info": {
+          "package_name": "com.example.karim.muzzafapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38935603017-khosg7l0lmb2aj6801oebh2klashnei2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karim.muzzafapp",
+            "certificate_hash": "eedb6107aa1f3b5a8b4a69b93173d2d2ba9347b3"
+          }
+        },
+        {
+          "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAelwYZ9Q0F5CaZUZXKNgPPCR1Cekizfls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38935603017-00t052hfg8obbmhg2ucbh54086opnsh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
