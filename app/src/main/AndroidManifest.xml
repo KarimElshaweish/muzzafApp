@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <receiver
-            android:name="Brodcast.MyReceiver"
+            android:name=".Brodcast.MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -31,11 +31,9 @@
         </receiver>
 
         <activity
-            android:name="MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="Activites.SplashScreen"
-            android:screenOrientation="portrait">
+        <activity android:name=".Activites.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,24 +41,25 @@
             </intent-filter>
         </activity>
 
+
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
         <activity
-            android:name="Activites.timerList"
+            android:name=".Activites.timerList"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Activites.Register"
+            android:name=".Activites.Register"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Activites.WinnerWeek"
+            android:name=".Activites.WinnerWeek"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Activites.Durations"
+            android:name=".Activites.Durations"
             android:screenOrientation="portrait" />
         <activity
-            android:name="Activites.DayList"
+            android:name=".Activites.DayList"
             android:screenOrientation="portrait" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -74,7 +73,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="Activites.newoffer"></activity>
+        <activity android:name=".Activites.newoffer"></activity>
     </application>
 
 </manifest>
