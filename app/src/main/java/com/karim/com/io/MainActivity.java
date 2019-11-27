@@ -258,6 +258,12 @@ PlaceData placeData;
         });
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        _finish();
+    }
+
     TextView offerTxt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -279,7 +285,7 @@ PlaceData placeData;
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 if (ActivityCompat.checkSelfPermission(MainActivity.this,Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                    ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA}, 170);
                     return;
                 }
                 try {
@@ -326,7 +332,10 @@ PlaceData placeData;
        // surfaceView.setVisibility(View.GONE);
     }
 
-
+    private void _finish() {
+        finish();
+        startActivity(new Intent(this,MainActivity.class));
+    }
 
 
 }

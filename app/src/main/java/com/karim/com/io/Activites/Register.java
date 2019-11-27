@@ -46,6 +46,9 @@ public class Register extends AppCompatActivity {
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mcalls;
     private FirebaseAuth mAuth;
 
+    public void forgetPassword(View view){
+    startActivity(new Intent(this,ForgetPassword.class));
+    }
     public void Close(View view){
         finish();
     }
@@ -138,34 +141,7 @@ public class Register extends AppCompatActivity {
         pb.setVisibility(View.VISIBLE);
         loginPhoneNumber.setEnabled(false);
         loginPassword.setEnabled(false);
-        mcalls=new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-            @Override
-            public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-                signInWithPhoneAuthCredential(phoneAuthCredential);
-                Toast.makeText(getBaseContext(), "Done", Toast.LENGTH_SHORT).show();
 
-
-            }
-
-            @Override
-            public void onVerificationFailed(FirebaseException e) {
-                Toast.makeText(getBaseContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-            @Override
-            public void onCodeSent(String verificationId,
-                                   PhoneAuthProvider.ForceResendingToken token) {
-                // Save verification ID and resending token so we can use them later
-                // ...
-            }
-
-        };
-
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                loginPhoneNumber.getText().toString(),        // Phone number to verify
-                60,                 // Timeout duration
-                TimeUnit.SECONDS,   // Unit of timeout
-                Register.this,               // Activity (for callback binding
-                mcalls );
 
 
 
